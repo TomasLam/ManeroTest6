@@ -37,7 +37,7 @@
 - Implementerade Product-klass med Id, Name, Price och Description  
 - Förstod hur modeller används för att representera data i backend
 
-## 2026-01-20
+## 2026-01-21
 **Aktivitet:** Felsökning av namespace-problem  
 **Resultat:**  
 - Fick build-fel när ProductsController inte hittade Product-modellen  
@@ -96,3 +96,17 @@ Slut
 7. Produkter visas för användaren
 
 8. Slut
+
+## 2026-01-22
+**Aktivitet:** Pushade projektet till GitHub  
+**Resultat:**  
+- Kopplade lokalt Git-repository till GitHub  
+- Pushade main-branch till publikt repo  
+- Verifierade att korrekt struktur finns utan build-filer
+
+## 2026-01-22
+**Aktivitet:** Slutförde backend och dokumentation  
+**Resultat:**   
+- Pushade projektet till publikt GitHub-repo  
+- Skapade README och verifierade tester  
+- Förberedde projektet för frontend-arbete
