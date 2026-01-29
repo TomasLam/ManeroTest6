@@ -44,3 +44,55 @@
 - Identifierade felaktig mappstruktur/namespace  
 - Justerade namespace till ManeroTest6.Api.Models  
 - Förstod kopplingen mellan mappstruktur och namespaces
+
+## 2026-01-21
+**Aktivitet:** Implementerade POST-funktionalitet för produkter  
+**Resultat:**  
+- Skapade POST /api/products endpoint  
+- Implementerade in-memory-lagring av produkter  
+- Testade funktionalitet via Swagger  
+- Skapade enhetstest för AddProduct  
+- Uppfyllde User Story: Lägg till produkt
+
+
+                       Aktivitetsdiagram
+
+                              
+ Start
+  |
+  v
+Användare öppnar produktsidan
+  |
+  v
+Frontend skickar request till API (/api/products)
+  |
+  v
+ProductsController tar emot request
+  |
+  v
+Produkter hämtas från listan
+  |
+  v
+API returnerar produkter i JSON-format
+  |
+  v
+Produkter visas för användaren
+  |
+  v
+Slut
+
+1. Start
+
+2. Användare öppnar produktsidan
+
+3. Frontend skickar "request" till API
+
+4. ProductsController tar emot "request"
+
+5. Produkter hämtas
+
+6. Producter skickas tillbaka som JSON
+
+7. Produkter visas för användaren
+
+8. Slut
