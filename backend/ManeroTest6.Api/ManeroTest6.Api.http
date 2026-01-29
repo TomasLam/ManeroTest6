@@ -1,0 +1,6 @@
+@ManeroTest6.Api_HostAddress = http://localhost:5098
+
+GET {{ManeroTest6.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
