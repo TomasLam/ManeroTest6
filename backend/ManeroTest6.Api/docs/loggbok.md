@@ -110,3 +110,10 @@ Slut
 - Pushade projektet till publikt GitHub-repo  
 - Skapade README och verifierade tester  
 - Förberedde projektet för frontend-arbete
+
+## 2026-01-26
+**Aktivitet:** Scrumboard och user stories  
+**Resultat:**  
+- Skapade scrumboard i GitHub Projects  
+- Dokumenterade två user stories och markerade dem som Done  
+- Tog screenshots för inlämning
