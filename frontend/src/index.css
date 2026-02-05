@@ -778,3 +778,92 @@ top: 1rem;
   color: #363636;
   font-size: 0.85rem;
 }
+
+
+/* profile page */
+
+.profile-info {
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.profile-info .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  margin: 0 auto 0.5rem;
+}
+
+.profile-menu {
+  padding: 0 1rem;
+}
+
+.profile-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem;
+}
+
+/* edit-profile page */
+
+.edit-profile {
+  background: #f7f7f7;
+  min-height: 100vh;
+}
+
+.edit-form {
+  padding: 1rem;
+}
+
+.avatar.editable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+
+/* my adress page */
+
+.address-page {
+  background: #f7f7f7;
+  min-height: 100vh;
+}
+
+.address-list {
+  padding: 1rem;
+}
+
+.address-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: white;
+  border-radius: 12px;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.address-info {
+  flex: 1;
+}
+
+.address-info p {
+  font-size: 0.75rem;
+  color: #777;
+}
+
+.add-address {
+  background: #f7f7f7;
+  min-height: 100vh;
+}
+
+.map-placeholder {
+  height: 180px;
+  background: #dfe7f3;
+}

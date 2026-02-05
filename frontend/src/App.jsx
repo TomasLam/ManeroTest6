@@ -19,6 +19,11 @@ import Reviews from "./Reviews";
 import LeaveReview from "./LeaveReview";
 import Wishlist from "./Wishlist";
 import Filters from "./Filters";
+import Profile from "./Profile";
+import EditProfile from "./EditProfile";
+import MyAddress from "./MyAddress";
+import AddNewAddress from "./AddNewAddress";
+
 
 
 
@@ -80,6 +85,20 @@ case "contact":
 
 case "filters":
   return <Filters goTo={setPage} />;
+
+
+    case "profile":
+  return <Profile goTo={setPage} />;
+
+  case "edit-profile":
+  return <EditProfile goTo={setPage} />;
+
+
+      case "my-address":
+  return <MyAddress goTo={setPage} />;
+
+  case "add-address":
+  return <AddNewAddress goTo={setPage} />;
 
 
 

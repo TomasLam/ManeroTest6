@@ -130,7 +130,13 @@ function ProductList({ goTo }) {
   ❤️
 </button>
 
-        <span>👤</span>
+       <button
+  className="nav-btn"
+  onClick={() => goTo("profile")}
+>
+  👤
+</button>
+
       </nav>
     </div>
   );
