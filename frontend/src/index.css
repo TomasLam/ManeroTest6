@@ -867,3 +867,164 @@ top: 1rem;
   height: 180px;
   background: #dfe7f3;
 }
+
+
+/* paymentmethod page */
+
+.payment-page {
+  background: #f7f7f7;
+  min-height: 100vh;
+  padding-bottom: 70px;
+}
+
+.cards-row {
+  display: flex;
+  
+  padding: 1.5rem;
+}
+.expirecard {
+  margin-left: 100px;
+}
+
+.card {
+  flex: 1;
+  border-radius: 16px;
+  color: white;
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+.card.visa.purple {
+  background: linear-gradient(135deg,#8a4b8f,#5b2a63);
+}
+
+.card.visa.green {
+  background: linear-gradient(135deg,#6b9d55,#3f6f35);
+}
+
+.purplecard{
+  font-style: oblique;
+  font-weight: bold;
+}
+
+
+.greencard{
+  font-style: oblique;
+  font-weight: bold;
+} 
+.pay-list {
+  background: white;
+  margin: 0 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.pay-item {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid #eee;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* order histroy */
+
+.order-history {
+  background: #f7f7f7;
+  min-height: 100vh;
+}
+
+.orders {
+  padding: 1rem;
+}
+
+.order-item {
+  background: white;
+  border-radius: 12px;
+  padding: 0.8rem;
+  margin-bottom: 0.7rem;
+  font-size: 0.85rem;
+}
+
+.order-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
+}
+
+.status.shipping { color: orange; }
+.status.delivered { color: green; }
+.status.canceled { color: red; }
+
+.order-item .price {
+  font-weight: bold;
+  margin-top: 0.3rem;
+}
+
+/* logout */
+
+.logout-overlay {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.4);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.logout-modal {
+  background:white;
+  padding:2rem;
+  border-radius:20px;
+  text-align:center;
+  width:80%;
+  max-width:300px;
+}
+
+.cancel-btn {
+  margin-top:0.5rem;
+  background:none;
+  border:none;
+  color:#666;
+}
+
+/* track order */
+
+.track-order {
+  background:#f7f7f7;
+  min-height:100vh;
+}
+
+.track-content {
+  padding:1rem;
+}
+
+.timeline {
+  margin-top:1rem;
+}
+
+.step {
+  display:flex;
+  gap:0.75rem;
+  margin-bottom:1rem;
+}
+
+.dot {
+  width:14px;
+  height:14px;
+  border-radius:50%;
+  border:2px solid #ccc;
+  margin-top:4px;
+}
+
+.step.done .dot {
+  background:black;
+}
+
+.step.active .dot {
+  border-color:black;
+}

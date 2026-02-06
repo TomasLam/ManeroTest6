@@ -23,7 +23,11 @@ import Profile from "./Profile";
 import EditProfile from "./EditProfile";
 import MyAddress from "./MyAddress";
 import AddNewAddress from "./AddNewAddress";
+import PaymentMethods from "./PaymentMethods";
+import AddCard from "./AddCard";
+import OrderHistory from "./OrderHistory";
 
+import TrackOrder from "./TrackOrder";
 
 
 
@@ -100,6 +104,19 @@ case "filters":
   case "add-address":
   return <AddNewAddress goTo={setPage} />;
 
+
+    case "payment-methods":
+  return <PaymentMethods goTo={setPage} />;
+
+case "add-card":
+  return <AddCard goTo={setPage} />;
+
+  case "order-history":
+  return <OrderHistory goTo={setPage} />;
+
+
+      case "track-order":
+  return <TrackOrder goTo={setPage} />;
 
 
     default:
