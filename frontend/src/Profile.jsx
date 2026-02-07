@@ -37,7 +37,13 @@ function Profile({ goTo }) {
           📍 My address
         </div>
 
-        <div className="profile-item">🏷️ My promocodes</div>
+        <div
+          className="profile-item clickable"
+          onClick={() => goTo("my-promocodes")}
+        >
+          🏷️ My promocodes
+      </div>
+
 
         <div
           className="profile-item clickable"

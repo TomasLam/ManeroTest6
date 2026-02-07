@@ -9,7 +9,13 @@ function ProductList({ goTo }) {
         <span className="menu">☰</span>
         <h1>MANERO</h1>
         <span className="cart">
-          🛒<span className="badge">2</span>
+         <span
+          className="cart clickable"
+          onClick={() => goTo("cart")}
+          >
+          🛒<span className="badge">0</span>
+          </span>
+
         </span>
       </header>
 

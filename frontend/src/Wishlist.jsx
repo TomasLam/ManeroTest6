@@ -6,9 +6,12 @@ function Wishlist({ goTo }) {
       <header className="shop-header">
         <span>☰</span>
         <h1>Wishlist</h1>
-        <span className="cart">
-          🛒<span className="badge">2</span>
-        </span>
+         <span
+          className="cart clickable"
+          onClick={() => goTo("cart")}
+          >
+          🛒<span className="badge">0</span>
+          </span>
       </header>
 
       {/* Wishlist items */}
@@ -50,7 +53,13 @@ function Wishlist({ goTo }) {
         <span onClick={() => goTo("categories")}>🔍</span>
         <span>🛍️</span>
         <span className="active">❤️</span>
-        <span>👤</span>
+          <button
+            className="nav-btn"
+             onClick={() => goTo("profile")}
+          >
+              👤
+          </button>
+
       </nav>
     </div>
   );

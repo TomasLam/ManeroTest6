@@ -11,9 +11,12 @@ function Categories({ goTo }) {
           type="text"
           placeholder="Search"
         />
-        <span className="cart">
-          🛒<span className="badge">2</span>
-        </span>
+         <span
+          className="cart clickable"
+          onClick={() => goTo("cart")}
+          >
+          🛒<span className="badge">0</span>
+          </span>
       </header>
 
       {/* Tabs */}

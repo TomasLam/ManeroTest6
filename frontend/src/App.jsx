@@ -28,7 +28,9 @@ import AddCard from "./AddCard";
 import OrderHistory from "./OrderHistory";
 
 import TrackOrder from "./TrackOrder";
-
+import MyPromocodes from "./MyPromocodes";
+import AddVoucher from "./AddVoucher";
+import Cart from "./Cart";
 
 
 
@@ -117,6 +119,16 @@ case "add-card":
 
       case "track-order":
   return <TrackOrder goTo={setPage} />;
+
+  case "my-promocodes":
+  return <MyPromocodes goTo={setPage} />;
+
+  case "add-voucher":
+  return <AddVoucher goTo={setPage} />;
+
+    case "cart":
+  return <Cart goTo={setPage} />;
+
 
 
     default:
