@@ -154,7 +154,8 @@ case "add-card":
    return <ShippingDetails goTo={setPage} />;
 
    case "payment-cart":
-  return <PaymentCart goTo={setPage} />;
+  return <PaymentCart goTo={setPage} cart={cart} />;
+
 
 
     case "order-success":

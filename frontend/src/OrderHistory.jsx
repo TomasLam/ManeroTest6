@@ -1,8 +1,18 @@
+import { useEffect, useState } from "react";
+
 function OrderHistory({ goTo }) {
+
+  const [orders, setOrders] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:5098/api/orders")
+      .then(res => res.json())
+      .then(data => setOrders(data));
+  }, []);
+
   return (
     <div className="order-history">
 
-      {/* Header */}
       <header className="shop-header">
         <button className="nav-btn" onClick={() => goTo("profile")}>
           ←
@@ -11,48 +21,31 @@ function OrderHistory({ goTo }) {
         <span></span>
       </header>
 
-      {/* Orders */}
       <div className="orders">
 
-        <div className="order-item">
-          <div className="order-top">
-            <strong>#100345</strong>
-            <span className="status shipping">Shipping</span>
-            
-          </div>
-          <small>Feb 02, 2022 at 8:32 PM</small>
-          <p className="price">$354.32</p>
-          <span
-            className="clickable"
-            onClick={() => goTo("track-order")}
+        {orders.map(order => (
+          <div key={order.id} className="order-item">
+            <div className="order-top">
+              <strong>#{order.id}</strong>
+              <span className="status delivered">Completed</span>
+            </div>
+
+            <small>
+              {new Date(order.created).toLocaleString()}
+            </small>
+
+            <p className="price">${order.total}</p>
+
+            <span
+              className="clickable"
+              onClick={() => goTo("track-order")}
             >
-                 Track order
+              Track order
             </span>
-
-        </div>
-
-        <div className="order-item">
-          <div className="order-top">
-            <strong>#100345</strong>
-            <span className="status delivered">Delivered</span>
           </div>
-          <small>Feb 02, 2022 at 8:32 PM</small>
-          <p className="price">$354.32</p>
-          <span>Track order</span>
-        </div>
-
-        <div className="order-item">
-          <div className="order-top">
-            <strong>#100345</strong>
-            <span className="status canceled">Canceled</span>
-          </div>
-          <small>Feb 02, 2022 at 8:32 PM</small>
-          <p className="price">$354.32</p>
-          <span>Track order</span>
-        </div>
+        ))}
 
       </div>
-
     </div>
   );
 }

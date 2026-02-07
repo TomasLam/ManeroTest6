@@ -1,7 +1,10 @@
 import { useState } from "react";
 
-function PaymentCart({ goTo }) {
+function PaymentCart({ goTo, cart }) {
   const [selected, setSelected] = useState("card2");
+
+  const total = cart.reduce((sum, item) => sum + item.price, 0);
+
 
   return (
     <div className="payment-page">
@@ -52,17 +55,33 @@ function PaymentCart({ goTo }) {
         </label>
 
         <button
-             className="primary-btn"
-                onClick={() => {
-                if (selected === "card1") {
-                 goTo("order-failed");   // 6644
-         } else {
-                goTo("order-success");  // 1884
-         }
-            }}
-        >
-                 PAY
-        </button>
+  className="primary-btn"
+  onClick={async () => {
+
+    const order = {
+      customerName: "Test Customer",
+      total: total
+    };
+
+    await fetch("http://localhost:5098/api/orders", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(order)
+    });
+
+    if (selected === "card1") {
+      goTo("order-failed");
+    } else {
+      goTo("order-success");
+    }
+  }}
+>
+  PAY
+</button>
+
+
 
 
       </div>
