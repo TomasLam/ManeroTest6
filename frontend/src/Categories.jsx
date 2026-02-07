@@ -19,7 +19,6 @@ function Categories({ goTo }) {
           </span>
       </header>
 
-      {/* Tabs */}
       <div className="tabs">
         <span className="tab active">Men</span>
         <span className="tab">Women</span>
@@ -27,46 +26,46 @@ function Categories({ goTo }) {
         <span className="tab">Accessories</span>
       </div>
 
-      {/* Categories grid */}
       <div className="category-grid">
-        <div className="category-card">Dresses</div>
+         <div className="category-card">Dresses</div>
         <div className="category-card">Pants</div>
         <div className="category-card large">Accessories</div>
         <div className="category-card">Shoes</div>
-        <div className="category-card">T-shirts</div>
+
+          <div className="category-card">T-shirts</div>
       </div>
 
-  <button
-  className="contact-btn"
-  onClick={() => goTo("contact")}
->
-  Contact
-</button>
+       <button
+         className="contact-btn"
+          onClick={() => goTo("contact")}
+        >
+          Contact
+        </button>
 
 
-      {/* Bottom nav */}
+      
       <nav className="bottom-nav">
         <button
-    className="nav-btn"
-    onClick={() => goTo("products")}
-  >
-    🏠
-  </button>
+          className="nav-btn"
+          onClick={() => goTo("products")}
+         >
+           🏠
+        </button>
         <span className="active">🔍</span>
         <span>🛍️</span>
         <button
-  className="nav-btn"
-  onClick={() => goTo("wishlist")}
->
-  ❤️
-</button>
+        className="nav-btn"
+         onClick={() => goTo("wishlist")}
+        >
+            ❤️
+        </button>
 
         <button
-  className="nav-btn"
-  onClick={() => goTo("profile")}
->
-  👤
-</button>
+         className="nav-btn"
+          onClick={() => goTo("profile")}
+        >
+            👤
+        </button>
 
       </nav>
     </div>

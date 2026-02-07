@@ -27,7 +27,7 @@ function OrderHistory({ goTo }) {
           <div key={order.id} className="order-item">
             <div className="order-top">
               <strong>#{order.id}</strong>
-              <span className="status delivered">Completed</span>
+               <span className="status delivered">Completed</span>
             </div>
 
             <small>
@@ -38,7 +38,7 @@ function OrderHistory({ goTo }) {
 
             <span
               className="clickable"
-              onClick={() => goTo("track-order")}
+             onClick={() => goTo("track-order")}
             >
               Track order
             </span>

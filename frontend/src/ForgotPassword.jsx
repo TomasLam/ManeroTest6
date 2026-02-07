@@ -1,5 +1,6 @@
 function ForgotPassword({ goTo }) {
   return (
+
     <div className="login">
       <div className="login-content">
         <h1>Forgot password</h1>
@@ -14,14 +15,16 @@ function ForgotPassword({ goTo }) {
         </div>
 
         <button
-          className="primary-btn"
+           className="primary-btn"
           onClick={() => goTo("reset")}
-        >
+          >
           SEND
         </button>
       </div>
     </div>
   );
+
+
 }
 
 export default ForgotPassword;

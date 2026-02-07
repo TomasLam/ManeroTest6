@@ -12,6 +12,7 @@ function ShippingDetails({ goTo }) {
 
         <div className="map-placeholder"></div>
 
+
         <div className="address-option">
           <input type="radio" name="address" />
           <div>
@@ -23,6 +24,7 @@ function ShippingDetails({ goTo }) {
         <div className="address-option">
           <input type="radio" name="address" />
           <div>
+
             <strong>Work</strong>
             <p>8000 S Kirkland Ave, Chicago</p>
           </div>
@@ -49,6 +51,7 @@ function ShippingDetails({ goTo }) {
             onClick={() => goTo("payment-cart")}
         >
             SAVE ADDRESS
+            
         </button>
 
 

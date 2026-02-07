@@ -4,6 +4,7 @@ function OrderFailed({ goTo }) {
 
       <div className="result-icon failed">✖</div>
 
+
       <h2>Sorry! Your order has failed!</h2>
       <p>Something went wrong. Please try again.</p>
 
@@ -22,6 +23,8 @@ function OrderFailed({ goTo }) {
       </span>
 
     </div>
+
+    
   );
 }
 

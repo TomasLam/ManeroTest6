@@ -1,13 +1,15 @@
 function Cart({ goTo, cart }) {
   const isEmpty = !cart || cart.length === 0;
 
+
   return (
     <div className="cart-page">
 
       <header className="shop-header">
-        <span className="menu">☰</span>
+         <span className="menu">☰</span>
         <h1>Cart</h1>
         <span></span>
+
       </header>
 
       {isEmpty ? (
@@ -31,7 +33,7 @@ function Cart({ goTo, cart }) {
               <div className="cart-img"></div>
 
               <div className="cart-info">
-                <h4>{item.name}</h4>
+                 <h4>{item.name}</h4>
                 <p>${item.price}</p>
               </div>
             </div>

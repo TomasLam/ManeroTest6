@@ -1,25 +1,29 @@
 function AccountCreated({ goTo }) {
-  return (
+   return (
+
     <div className="login">
+      
       <div className="login-content" style={{ textAlign: "center" }}>
         <div className="logo" style={{ marginBottom: "2rem" }}>
-          <span>MANERO</span>
+          <span>MANERO </span>
+
         </div>
 
-        <h1>Account Created!</h1>
+        <h1> Account Created! </h1>
 
         <p className="subtitle">
-          Your account has been created successfully.
+            Your account has been created successfully.
         </p>
 
         <button
-          className="primary-btn"
-          onClick={() => goTo("verify-phone")}
+           className="primary-btn"
+           onClick={() => goTo("verify-phone")}
         >
           SHOP NOW
         </button>
       </div>
     </div>
+
   );
 }
 

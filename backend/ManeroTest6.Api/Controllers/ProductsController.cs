@@ -7,16 +7,19 @@ namespace ManeroTest6.Api.Controllers
     [Route("api/[controller]")]
     public class ProductsController : ControllerBase
     {
-        // Enkel "in-memory"-lista (räcker för Godkänt)
+        
+
         private static readonly List<Product> _products = new()
         {
             new Product
             {
-                Id = 1,
-                Name = "Manero Hoodie",
+                 Id = 1,
+
+                 Name = "Manero Hoodie",
                 Price = 599,
                 Description = "Bekväm hoodie från Manero"
             }
+
         };
 
         [HttpGet]
@@ -25,13 +28,15 @@ namespace ManeroTest6.Api.Controllers
             return Ok(_products);
         }
 
+
         [HttpPost]
+
         public IActionResult AddProduct(Product product)
         {
             product.Id = _products.Count + 1;
-            _products.Add(product);
-
-            return CreatedAtAction(nameof(GetProducts), product);
+              _products.Add(product);
+ 
+             return CreatedAtAction(nameof(GetProducts), product);
         }
     }
 }

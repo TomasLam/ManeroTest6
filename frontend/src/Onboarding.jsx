@@ -25,7 +25,6 @@ function Onboarding({ goTo }) {
     if (current < slides.length - 1) {
       setCurrent(current + 1);
     } else {
-      // sista steget → login
       goTo("login");
     }
   };

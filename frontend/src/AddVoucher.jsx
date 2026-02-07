@@ -1,6 +1,6 @@
 function AddVoucher({ goTo }) {
   return (
-    <div className="voucher-page">
+      <div className="voucher-page">
 
       <header className="shop-header">
         <span onClick={() => goTo("my-promocodes")}>←</span>
@@ -8,11 +8,11 @@ function AddVoucher({ goTo }) {
         <span></span>
       </header>
 
-      <div className="voucher-empty">
+        <div className="voucher-empty">
 
         <div className="voucher-circle">
-          %
-        </div>
+            %
+         </div>
 
         <h2>Your don’t have promocodes yet!</h2>
         <p>Qui ex aute ipsum duis. Incididunt adipisicing voluptate laborum</p>

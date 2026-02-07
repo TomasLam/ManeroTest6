@@ -10,10 +10,11 @@ function TrackOrder({ goTo }) {
         <span></span>
       </header>
 
-      <div className="track-content">
+       <div className="track-content">
+        
         <div className="track-icon">📍</div>
 
-        <h3>Your order:</h3>
+        <h3>Your order:</h3> 
         <p>#100345</p>
 
         <div className="timeline">
@@ -31,7 +32,7 @@ function TrackOrder({ goTo }) {
             <div>
               <strong>Order confirmed</strong>
               <small>Your order has been confirmed</small>
-            </div>
+              </div>
           </div>
 
           <div className="step active">
@@ -54,7 +55,8 @@ function TrackOrder({ goTo }) {
             <div className="dot"></div>
             <div>
               <strong>Receiving</strong>
-              <small>Estimated for Feb 06, 2022</small>
+
+               <small>Estimated for Feb 06, 2022</small>
             </div>
           </div>
 

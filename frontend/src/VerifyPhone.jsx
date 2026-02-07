@@ -18,7 +18,7 @@ function VerifyPhone({ goTo }) {
           onClick={() => goTo("verify-otp")}
         >
           CONFIRM
-        </button>
+          </button>
       </div>
     </div>
   );

@@ -16,7 +16,7 @@ function Profile({ goTo }) {
       <div className="profile-info">
         <div className="avatar"></div>
         <h3>Kristin Watson</h3>
-        <p>kristinwatson@mail.com</p>
+         <p>kristinwatson@mail.com</p>
       </div>
 
       <div className="profile-menu">
@@ -24,6 +24,7 @@ function Profile({ goTo }) {
         <div className="profile-item clickable" onClick={() => goTo("edit-profile")}>
           ✏️ Edit profile
         </div>
+
 
         <div className="profile-item clickable" onClick={() => goTo("order-history")}>
           📦 Order history
@@ -54,15 +55,18 @@ function Profile({ goTo }) {
 
       </div>
 
+
       <nav className="bottom-nav">
-        <span onClick={() => goTo("products")}>🏠</span>
+         <span onClick={() => goTo("products")}>🏠</span>
         <span onClick={() => goTo("categories")}>🔍</span>
         <span>🛍️</span>
         <span onClick={() => goTo("wishlist")}>❤️</span>
         <span className="active">👤</span>
       </nav>
 
-      {/* POPUP */}
+      
+
+
       {showLogout && (
         <div className="logout-overlay">
           <div className="logout-modal">

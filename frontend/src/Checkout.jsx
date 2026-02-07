@@ -1,6 +1,7 @@
 function Checkout({ goTo, cart }) {
   const total = cart.reduce((sum, item) => sum + item.price, 0);
 
+
   return (
     <div className="checkout-page">
 
@@ -8,11 +9,12 @@ function Checkout({ goTo, cart }) {
         <span onClick={() => goTo("cart")}>←</span>
         <h1>Checkout</h1>
         <span></span>
+
       </header>
 
       <div className="checkout-content">
 
-        <h3>My order</h3>
+         <h3>My order</h3>
 
         {cart.map((item, index) => (
           <div key={index} className="checkout-item">
@@ -21,10 +23,12 @@ function Checkout({ goTo, cart }) {
           </div>
         ))}
 
+
         <div className="checkout-summary">
           <div>
             <span>Delivery</span>
             <span>Free</span>
+
           </div>
           <div className="total">
             <strong>Total</strong>
@@ -41,7 +45,7 @@ function Checkout({ goTo, cart }) {
         <label>Comment</label>
         <textarea placeholder="Enter your comment"></textarea>
 
-        <button
+         <button
             className="primary-btn"
              onClick={() => goTo("shipping-details")}
         >

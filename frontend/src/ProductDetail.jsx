@@ -16,6 +16,7 @@ function ProductDetail({ goTo }) {
 
       
       <div className="detail-content">
+
         <h2>Summer dress</h2>
         <p className="stars">★★★★★ (3)</p>
         <p className="price">$15.98</p>
@@ -49,6 +50,7 @@ function ProductDetail({ goTo }) {
           </p>
         </div>
 
+
         <button className="primary-btn">ADD TO CART</button>
 
         
@@ -68,8 +70,9 @@ function ProductDetail({ goTo }) {
           <div className="review">
             <strong>Annette Black</strong>
             <p className="stars">★★★★★</p>
-            <p>Great quality and fast delivery!</p>
+             <p>Great quality and fast delivery!</p>
           </div>
+
 
           <div className="review">
             <strong>Jenny Wilson</strong>
@@ -77,6 +80,7 @@ function ProductDetail({ goTo }) {
             <p>Really comfortable and looks great.</p>
           </div>
         </div>
+        
       </div>
 
     </div>

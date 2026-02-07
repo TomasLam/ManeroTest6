@@ -35,13 +35,14 @@ function PaymentCart({ goTo, cart }) {
             checked={selected === "card2"}
             onChange={() => setSelected("card2")}
           />
+          
         </label>
 
         <h3>Other</h3>
 
         <label className="payment-option">
           <span>Apple Pay</span>
-          <input type="radio" />
+           <input type="radio" />
         </label>
 
         <label className="payment-option">

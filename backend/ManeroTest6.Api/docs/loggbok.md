@@ -144,3 +144,15 @@ Slut
 - Skapade Cart-sida som visar produkter som lagts till.
 - Skapade Shipping details- och Payment-sidor och kopplade navigation mellan dessa.
 - Testade hela flödet: Product → Cart → Checkout → Payment → Result.
+
+## 2026-02-08
+**Aktivitet:** Fullstack-koppling frontend och backend  
+
+**Resultat:**  
+- Implementerade kundvagn i React med state-hantering  
+- Kopplade checkout-flödet till backend via `POST /api/orders`  
+- Order sparas nu i backend och hämtas via `GET /api/orders` i Order History  
+- Testade hela flödet:  
+  ProductList → Cart → Checkout → Payment → Order History  
+- Säkerställde att både backend och frontend körs lokalt och kommunicerar korrekt  
+- Pushade slutversionen till GitHub

@@ -2,13 +2,13 @@ function LeaveReview({ goTo }) {
   return (
     <div className="leave-review">
 
-      {/* Header */}
+  
       <header className="shop-header">
         <button className="nav-btn" onClick={() => goTo("reviews")}>
           ←
         </button>
         <h1>Leave a review</h1>
-        <span></span>
+           <span></span>
       </header>
 
       <div className="review-content">
@@ -18,6 +18,7 @@ function LeaveReview({ goTo }) {
         <h2>Please rate the quality of service for the order!</h2>
 
         <div className="rating">
+
           <span>☆</span>
           <span>☆</span>
           <span>☆</span>
@@ -26,12 +27,12 @@ function LeaveReview({ goTo }) {
         </div>
 
         <div className="input-group">
-          <label>Comment</label>
+            <label>Comment</label>
           <textarea placeholder="Enter your comment"></textarea>
         </div>
 
         <button
-          className="primary-btn"
+           className="primary-btn"
           onClick={() => goTo("reviews")}
         >
           SUBMIT

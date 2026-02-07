@@ -18,6 +18,7 @@ function ResetPassword({ goTo }) {
           <input type="password" placeholder="********" />
         </div>
 
+
         <button
           className="primary-btn"
           onClick={() => goTo("done")}

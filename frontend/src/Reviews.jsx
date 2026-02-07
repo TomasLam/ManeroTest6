@@ -27,7 +27,7 @@ function Reviews({ goTo }) {
         <div className="review-card">
           <div className="avatar"></div>
           <div>
-            <strong>Theresa Webb</strong>
+             <strong>Theresa Webb</strong>
             <p className="date">23 Jan 2022</p>
             <p className="stars">★★★★★</p>
             <p>Comfortable and looks amazing.</p>
@@ -39,12 +39,13 @@ function Reviews({ goTo }) {
           <div>
             <strong>Marvin McKinney</strong>
             <p className="date">23 Jan 2022</p>
-            <p className="stars">★★★★★</p>
+              <p className="stars">★★★★★</p>
             <p>Very happy with this purchase.</p>
           </div>
         </div>
 
-        <div className="review-card">
+        <div className="review-card"> 
+          
           <div className="avatar"></div>
           <div>
             <strong>Jacob Jones</strong>

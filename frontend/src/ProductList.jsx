@@ -84,7 +84,6 @@ function ProductList({ goTo, addToCart, cartCount }) {
         <button className="primary-btn small">SHOP NOW</button>
       </section>
 
-      {/* Featured */}
       <section className="section">
         <div className="section-header">
           <h3>Featured products</h3>
@@ -121,42 +120,40 @@ function ProductList({ goTo, addToCart, cartCount }) {
   Contact
 </button>
 
-
-      {/* Bottom nav */}
       <nav className="bottom-nav">
         <button
-    className="nav-btn"
-    onClick={() => goTo("products")}
-  >
-    🏠
-  </button>
+         className="nav-btn"
+         onClick={() => goTo("products")}
+        >
+           🏠
+        </button>
        <button
-  className="nav-btn"
-  onClick={() => {
-    console.log("SEARCH CLICKED");
-    goTo("categories");
-  }}
->
-  🔍
-  </button>
+        className="nav-btn"
+        onClick={() => {
+        console.log("SEARCH CLICKED");
+          goTo("categories");
+        }}
+        >
+          🔍
+      </button>
 
 
         <span>🛍️</span>
         <button
-  className="nav-btn"
-  onClick={() => goTo("wishlist")}
->
-  ❤️
-</button>
+          className="nav-btn"
+            onClick={() => goTo("wishlist")}
+        >
+          ❤️
+        </button>
 
        <button
-  className="nav-btn"
-  onClick={() => goTo("profile")}
->
-  👤
-</button>
+         className="nav-btn"
+          onClick={() => goTo("profile")}
+      >
+        👤
+        </button>
 
-      </nav>
+         </nav>
     </div>
   );
 }

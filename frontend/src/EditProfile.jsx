@@ -1,25 +1,27 @@
 function EditProfile({ goTo }) {
   return (
-    <div className="edit-profile">
+    <div className="edit-profile">  
+
 
     
       <header className="shop-header">
         <button className="nav-btn" onClick={() => goTo("profile")}>
           ←
         </button>
-        <h1>Edit profile</h1>
+          <h1>Edit profile</h1>
         <span></span>
       </header>
+
 
       
       <div className="profile-info">
         <div className="avatar editable">
     
-        </div>
+          </div>
       </div>
 
     
-      <div className="edit-form">
+        <div className="edit-form">
 
         <div className="input-group">
           <label>Name</label>
@@ -27,7 +29,7 @@ function EditProfile({ goTo }) {
         </div>
 
         <div className="input-group">
-          <label>Email</label>
+           <label>Email</label>
           <input type="email" placeholder="kristinwatson@mail.com" />
         </div>
 
