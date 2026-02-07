@@ -2,7 +2,8 @@ function Reviews({ goTo }) {
   return (
     <div className="reviews-page">
 
-      {/* Header */}
+    
+    
       <header className="shop-header">
         <button className="nav-btn" onClick={() => goTo("product-detail")}>
           ←
@@ -11,7 +12,6 @@ function Reviews({ goTo }) {
         <span></span>
       </header>
 
-      {/* Reviews list */}
       <div className="reviews-list">
 
         <div className="review-card">
