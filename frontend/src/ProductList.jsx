@@ -1,23 +1,23 @@
-function ProductList({ goTo }) {
-
+function ProductList({ goTo, addToCart, cartCount }) {
 
   return (
     <div className="shop">
 
-   
       <header className="shop-header">
         <span className="menu">☰</span>
         <h1>MANERO</h1>
-        <span className="cart">
-         <span
+
+        <span
           className="cart clickable"
           onClick={() => goTo("cart")}
-          >
-          🛒<span className="badge">0</span>
-          </span>
-
+        >
+          🛒
+          {cartCount > 0 && (
+            <span className="badge">{cartCount}</span>
+          )}
         </span>
       </header>
+
 
       
       <section className="hero">
@@ -39,30 +39,43 @@ function ProductList({ goTo }) {
         </div>
 
         <div className="products">
-          <div
-            className="product-card"
-              onClick={() => goTo("product-detail")}
-            >
+          <div className="product-card">
+            <div className="product-image"></div>
+               <h4>Summer dress</h4>
+        <p className="price">$42.89</p>
 
-            <div className="product-image sale"></div>
-            <p className="stars">★★★★★ (3)</p>
-            <h4>Summer dress</h4>
-            <p className="price">
-              <span className="old">$30.00</span> $15.98
-            </p>
+          <button
+             className="add-btn"
+              onClick={() =>
+             addToCart({ name: "Summer dress", price: 42.89 })
+          }
+        >
+               Add
+          </button>
           </div>
-
-
 
           <div className="product-card">
             <div className="product-image"></div>
-            <p className="stars">★★★★★ (3)</p>
-            <h4>Black sneakers</h4>
-            <p className="price">$29.95</p>
+               <h4>Black sneakers</h4>
+        <p className="price">$29.95</p>
+
+          <button
+             className="add-btn"
+              onClick={() =>
+             addToCart({ name: "Black sneakers", price: 42.89 })
+          }
+        >
+               Add
+          </button>
           </div>
 
-          
+
+
+
+         
+                 
         </div>
+        
       </section>
 
       

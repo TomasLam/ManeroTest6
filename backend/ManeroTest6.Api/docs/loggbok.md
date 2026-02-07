@@ -117,3 +117,22 @@ Slut
 - Skapade scrumboard i GitHub Projects  
 - Dokumenterade två user stories och markerade dem som Done  
 - Tog screenshots för inlämning
+
+## 2026-01-29
+**Aktivitet:** Frontend setup  
+**Resultat:**  
+- Skapade React-projekt med Vite  
+- Byggde onboarding-flöde
+- Implementerade navigering till login-sidan
+- Byggde Login och Forgot password sida
+- Skapade Sign up och verifieringsflöde
+- Koppla ihop auth-flödet
+- Lade till "Skip" knapp till Login sidan
+
+## 2026-02-2
+**Aktivitet:** Frontend – produktflöden och navigation  
+**Resultat:**  
+- Byggde ProductList, Categories, Wishlist och Reviews  
+- Implementerade navigation via bottom navigation  
+- Lade till filter- och review-sidor  
+- Commit och push till GitHub

@@ -1162,3 +1162,9 @@ top: 1rem;
   justify-content: center;
   font-size: 40px;
 }
+
+.add-btn {
+  border-radius: 12px;
+  border: none;
+  background-color: #cce4f8;
+}

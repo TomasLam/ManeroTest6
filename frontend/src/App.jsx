@@ -37,6 +37,11 @@ import Cart from "./Cart";
 
 function App() {
   const [page, setPage] = useState("onboarding");
+  const [cart, setCart] = useState([]);
+  
+  const addToCart = (product) => {
+  setCart(prev => [...prev, product]);
+  };
 
   switch (page) {
     case "login":
@@ -63,8 +68,16 @@ function App() {
     case "verify-otp":
       return <VerifyOtp goTo={setPage} />;
 
+
         case "products":
-  return <ProductList goTo={setPage} />;
+  return (
+    <ProductList
+      goTo={setPage}
+      addToCart={addToCart}
+      cartCount={cart.length}
+    />
+  );
+
 
 
       case "categories":
@@ -127,7 +140,8 @@ case "add-card":
   return <AddVoucher goTo={setPage} />;
 
     case "cart":
-  return <Cart goTo={setPage} />;
+  return <Cart goTo={setPage} cart={cart} />;
+
 
 
 
