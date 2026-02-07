@@ -37,9 +37,13 @@ function Cart({ goTo, cart }) {
             </div>
           ))}
 
-          <button className="primary-btn">
-            PROCEED TO CHECKOUT
+          <button
+            className="primary-btn"
+              onClick={() => goTo("checkout")}
+          >
+             PROCEED TO CHECKOUT
           </button>
+
         </div>
       )}
 

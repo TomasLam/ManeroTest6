@@ -136,3 +136,11 @@ Slut
 - Implementerade navigation via bottom navigation  
 - Lade till filter- och review-sidor  
 - Commit och push till GitHub
+
+## 2026-02-5
+**Aktivitet:** Checkout-flöde och cart-funktionalitet  
+**Resultat:**  
+- Implementerade global cart-state i React (add to cart funktion). 
+- Skapade Cart-sida som visar produkter som lagts till.
+- Skapade Shipping details- och Payment-sidor och kopplade navigation mellan dessa.
+- Testade hela flödet: Product → Cart → Checkout → Payment → Result.

@@ -31,6 +31,11 @@ import TrackOrder from "./TrackOrder";
 import MyPromocodes from "./MyPromocodes";
 import AddVoucher from "./AddVoucher";
 import Cart from "./Cart";
+import Checkout from "./Checkout";
+import ShippingDetails from "./ShippingDetails";
+import PaymentCart from "./PaymentCart";
+import OrderSuccess from "./OrderSuccess";
+import OrderFailed from "./OrderFailed";
 
 
 
@@ -142,7 +147,21 @@ case "add-card":
     case "cart":
   return <Cart goTo={setPage} cart={cart} />;
 
+  case "checkout":
+  return <Checkout goTo={setPage} cart={cart} />;
 
+  case "shipping-details":
+   return <ShippingDetails goTo={setPage} />;
+
+   case "payment-cart":
+  return <PaymentCart goTo={setPage} />;
+
+
+    case "order-success":
+  return <OrderSuccess goTo={setPage} />;
+
+case "order-failed":
+  return <OrderFailed goTo={setPage} />;
 
 
     default:

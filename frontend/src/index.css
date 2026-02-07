@@ -1168,3 +1168,149 @@ top: 1rem;
   border: none;
   background-color: #cce4f8;
 }
+
+/* checkout page */
+
+.checkout-page {
+  padding-bottom: 80px;
+}
+
+.checkout-content {
+  padding: 1.2rem;
+}
+
+.checkout-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.checkout-summary {
+  margin-top: 1rem;
+}
+
+.checkout-summary div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+.checkout-summary .total {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.checkout-box {
+  margin-top: 8px;
+  padding: 12px;
+  background: #f6f6f6;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.checkout-content textarea {
+  margin-top: 10px;
+  width: 100%;
+  height: 90px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.checkout-content .primary-btn {
+  margin-top: 18px;
+  width: 100%;
+}
+
+
+/* shipping details */
+
+.map-placeholder {
+  width: 100%;
+  height: 180px;
+  background: #e9e9e9;
+  border-radius: 14px;
+  margin-bottom: 15px;
+}
+
+.address-option {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.address-input {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.location-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+/* payment shipping details */
+
+.payment-content {
+  padding: 1.2rem;
+}
+
+.payment-option {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.payment-option input {
+  transform: scale(1.2);
+}
+
+.payment-content h3 {
+  margin-top: 16px;
+}
+
+/* order confirmation */
+
+.result-page {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.result-icon {
+  width: 140px;
+  height: 140px;
+  margin: 30px auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+}
+
+.result-icon.success {
+  border: 3px solid #2ecc71;
+  color: #2ecc71;
+}
+
+.result-icon.failed {
+  border: 3px solid #e74c3c;
+  color: #e74c3c;
+}
+
+.secondary-link {
+  display: block;
+  margin-top: 14px;
+  color: #777;
+  cursor: pointer;
+}
