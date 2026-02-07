@@ -145,7 +145,7 @@ Slut
 - Skapade Shipping details- och Payment-sidor och kopplade navigation mellan dessa.
 - Testade hela flödet: Product → Cart → Checkout → Payment → Result.
 
-## 2026-02-08
+## 2026-02-07
 **Aktivitet:** Fullstack-koppling frontend och backend  
 
 **Resultat:**  
