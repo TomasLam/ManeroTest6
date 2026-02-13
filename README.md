@@ -60,7 +60,3 @@ Tester körs med:
 
 ---
 
-## Kommentar
-
-Detta är ett utbildningsprojekt och fokuserar på grundläggande funktionalitet
-för att uppfylla kursens krav för godkänt.
